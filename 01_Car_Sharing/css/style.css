@@ -5,13 +5,12 @@
     box-sizing: border-box;
 }
 
-body * {
-    border:1 px dotted blue;
-}
+
 header {
     height: 97vh;
-    background-image: url(../images/Image.jpg);
+    background: rgba(0, 0, 0, .3), url("../images/Image.jpg");
     background-size: cover;
+    background-blend-mode: darken;
 }
 .nav-bar {
     font-family: "Nunito Sans" , sans-serif;
@@ -41,3 +40,17 @@ header {
     height: 35px;
     margin-right: 5px;
 }
+.nav-list {
+    display: flex;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color:white;
+
+}
+
+.nav-list li {
+    width: 128px;
+}
+
