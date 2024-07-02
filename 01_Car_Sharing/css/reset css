@@ -1,0 +1,366 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   wersja 2.0 zmodyfikowana | 20110126
+   Licencja: brak (domena publiczna)
+*/
+
+html, treść, div, span, aplet, obiekt, iframe,
+h1, h2, h3, h4, h5, h6, p, cytat blokowy, pre,
+a, skrót, akronim, adres, duży, cytuj, kod,
+del, dfn, em, img, ins, kbd, q, s, samp,
+mały, strajk, silny, sub, sup, tt, var,
+b, ty, ja, środek,
+dl, dt, dd, ol, ul, li,
+zestaw pól, formularz, etykieta, legenda,
+tabela, podpis, tbody, tfoot, thead, tr, th, td,
+artykuł, bok, płótno, szczegóły, osadzenie,
+rysunek, figcaption, stopka, nagłówek, hgroup,
+menu, nawigacja, wyjście, Ruby, sekcja, podsumowanie,
+czas, znak, audio, wideo {
+  margines: 0;
+	dopełnienie: 0;
+	granica: 0;
+	rozmiar czcionki: 100%;
+	czcionka: dziedzicz;
+	wyrównanie pionowe: linia bazowa;
+}
+
+/* pamiętaj o ustawieniu niektórych stylów fokusu dla dostępności */
+:centrum {
+    zarys: 0;
+}
+
+/* Resetowanie roli wyświetlania HTML5 dla starszych przeglądarek */
+artykuł, na boku, szczegóły, podpis, rysunek,
+stopka, nagłówek, grupa h, menu, nawigacja, sekcja {
+	Blok wyświetlacza;
+}
+
+ciało {
+	wysokość linii: 1;
+}
+
+ol, ul {
+	styl listy: brak;
+}
+
+cytat blokowy, q {
+	cytaty: brak;
+}
+
+cytat blokowy:przed, cytat blokowy:po,
+p:przed, q:po {
+	treść: '';
+	treść: brak;
+}
+
+tabela {
+	border-collapse: załamanie;
+	odstępy graniczne: 0;
+}
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-dekoracja-wyszukiwania-webkit,
+input[type=wyszukiwanie]::-przycisk-wyników-webkit-wyszukiwania,
+input[type=wyszukiwanie]::-webkit-wyniki-wyszukiwania-dekoracja {
+    -wygląd-webkit: brak;
+    -moz-wygląd: brak;
+}
+
+wejście[typ=wyszukiwanie] {
+    -wygląd-webkit: brak;
+    -moz-wygląd: brak;
+    -webkit-box-size: content-box;
+    -moz-box-sizing: content-box;
+    rozmiar pudełka: pudełko na zawartość;
+}
+
+obszar tekstowy {
+    przepełnienie: automatyczne;
+    wyrównanie w pionie: góra;
+    zmiana rozmiaru: pionowa;
+}
+
+/**
+ * Poprawne wyświetlanie bloku inline niezdefiniowanego w IE 6/7/8/9 i Firefoksie 3.
+ */
+
+audio,
+płótno,
+wideo {
+    wyświetlacz: blok inline;
+    *wyświetlacz: wbudowany;
+    *powiększenie: 1;
+    maksymalna szerokość: 100%;
+}
+
+/**
+ * Uniemożliwiaj nowoczesnym przeglądarkom wyświetlanie „audio” bez elementów sterujących.
+ * Usuń nadmiar wzrostu na urządzeniach z systemem iOS 5.
+ */
+
+audio:not([sterowanie]) {
+    Nie wyświetla się;
+    wysokość: 0;
+}
+
+/**
+ * Styl adresu nie jest dostępny w IE 7/8/9, Firefox 3 i Safari 4.
+ * Znany problem: brak obsługi IE 6.
+ */
+
+[ukryty] {
+    Nie wyświetla się;
+}
+
+/**
+ * 1. Popraw dziwną zmianę rozmiaru tekstu w IE 6/7, gdy ustawiono „rozmiar czcionki” w treści
+ * `em` jednostki.
+ * 2. Zapobiegaj dostosowywaniu rozmiaru tekstu w systemie iOS po zmianie orientacji, bez wyłączania
+ * powiększenie użytkownika.
+ */
+
+HTML {
+    rozmiar czcionki: 100%; /* 1 */
+    -webkit-dostosowanie rozmiaru tekstu: 100%; /* 2 */
+    -ms-dostosowanie rozmiaru tekstu: 100%; /* 2 */
+}
+
+/**
+ * Rozwiązanie problemu niespójności „konspektu” pomiędzy Chrome i innymi przeglądarkami.
+ */
+
+skupienie {
+    kontur: cienki, kropkowany;
+}
+
+/**
+ * Popraw czytelność po skupieniu i najechaniu myszką we wszystkich przeglądarkach.
+ */
+
+a:aktywny,
+a: najedź {
+    zarys: 0;
+}
+
+/**
+ * 1. Usuń obramowanie wewnątrz elementu „a” w IE 6/7/8/9 i przeglądarce Firefox 3.
+ * 2. Popraw jakość obrazu po skalowaniu w IE 7.
+ */
+
+obraz {
+    granica: 0; /* 1 */
+    -tryb-interpolacji ms: dwusześcienny; /* 2 */
+}
+
+/**
+ * Margines adresu nie występuje w IE 6/7/8/9, Safari 5 i Opera 11.
+ */
+
+postać {
+    margines: 0;
+}
+
+/**
+ * Prawidłowy margines wyświetlany dziwnie w IE 6/7.
+ */
+
+formularz {
+    margines: 0;
+}
+
+/**
+ * Zdefiniuj spójne obramowanie, margines i dopełnienie.
+ */
+
+zestaw pól {
+    obramowanie: 1 piksel #c0c0c0;
+    margines: 0 2px;
+    wypełnienie: 0,35em 0,625em 0,75em;
+}
+
+/**
+ * 1. Poprawny kolor nie jest dziedziczony w IE 6/7/8/9.
+ * 2. Poprawny tekst nie zawija się w przeglądarce Firefox 3.
+ * 3. Poprawne wyrównanie wyświetlane dziwnie w IE 6/7.
+ */
+
+legenda {
+    granica: 0; /* 1 */
+    dopełnienie: 0;
+    biała spacja: normalna; /* 2 */
+    *margines lewy: -7px; /* 3 */
+}
+
+/**
+ * 1. Prawidłowy rozmiar czcionki nie jest dziedziczony we wszystkich przeglądarkach.
+ * 2. Marginesy adresu ustawione inaczej w IE 6/7, Firefox 3+, Safari 5,
+ * i Chrome.
+ * 3. Popraw wygląd i spójność we wszystkich przeglądarkach.
+ */
+
+przycisk,
+wejście,
+wybierać,
+obszar tekstowy {
+    rozmiar czcionki: 100%; /* 1 */
+    margines: 0; /* 2 */
+    wyrównanie pionowe: linia bazowa; /* 3 */
+    *wyrównanie w pionie: środek; /* 3 */
+}
+
+/**
+ * Adres Firefox 3+, ustawiający „wysokość linii” na „wejściu” za pomocą „!ważne” w
+ * arkusz stylów UA.
+ */
+
+przycisk,
+wejście {
+    wysokość linii: normalna;
+}
+
+/**
+ * Adres niespójnego dziedziczenia „transformacji tekstu” dla „przycisku” i „wyboru”.
+ * Wszystkie pozostałe elementy kontrolne formularza nie dziedziczą wartości „przekształcania tekstu”.
+ * Poprawne dziedziczenie stylu „przycisku” w Chrome, Safari 5+ i IE 6+.
+ * Popraw dziedziczenie stylu „select” w przeglądarce Firefox 4+ i Operze.
+ */
+
+przycisk,
+wybierać {
+    transformacja tekstu: brak;
+}
+
+/**
+ * 1. Unikaj błędu WebKit w Androidzie 4.0.*, gdzie (2) niszczy natywne „audio”
+ * i elementy sterujące „wideo”.
+ * 2. Popraw brak możliwości stylizowania klikalnych typów danych wejściowych w systemie iOS.
+ * 3. Popraw użyteczność i spójność stylu kursora między typami obrazu
+ * „wejście” i inne.
+ * 4. Usuń wewnętrzne odstępy w IE 7 bez wpływu na normalne wprowadzanie tekstu.
+ * Znany problem: wewnętrzne odstępy pozostają w IE 6.
+ */
+
+przycisk,
+wejście HTML[type="przycisk"], /* 1 */
+wejście[typ="reset"],
+input[type="prześlij"] {
+    -wygląd-webkit: przycisk; /* 2 */
+    kursor: wskaźnik; /* 3 */
+    *przelew: widoczny; /* 4 */
+}
+
+/**
+ * Przywróć domyślny kursor dla wyłączonych elementów.
+ */
+
+przycisk [wyłączony],
+wejście HTML [wyłączone] {
+    kursor: domyślny;
+}
+
+/**
+ * 1. Rozmiar pola adresowego ustawiony na pole zawartości w IE 8/9.
+ * 2. Usuń nadmiar wypełnienia w IE 8/9.
+ * 3. Usuń nadmiar wypełnienia w IE 7.
+ * Znany problem: nadmiar wypełnienia pozostaje w IE 6.
+ */
+
+wejście[typ="pole wyboru"],
+wejście[typ="radio"] {
+    rozmiar pudełka: border-box; /* 1 */
+    dopełnienie: 0; /* 2 */
+    *wysokość: 13px; /* 3 */
+    *szerokość: 13px; /* 3 */
+}
+
+/**
+ * 1. Adres „wygląd” ustawiony na „pole wyszukiwania” w przeglądarkach Safari 5 i Chrome.
+ * 2. Adres `box-sizing` ustawiony na `border-box` w Safari 5 i Chrome
+ * (dołącz `-moz` do zabezpieczenia na przyszłość).
+ */
+
+input[type="search"] {
+    -wygląd-webkit: pole tekstowe; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-size: content-box; /* 2 */
+    rozmiar pudełka: pudełko na zawartość;
+}
+
+/**
+ * Usuń wewnętrzne wypełnienie i przycisk anulowania wyszukiwania w Safari 5 i Chrome
+ * na OS X.
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -wygląd-webkit: brak;
+}
+
+/**
+ * Usuń wewnętrzne wypełnienie i obramowanie w przeglądarce Firefox 3+.
+ */
+
+przycisk::-moz-focus-inner,
+input::-moz-focus-inner {
+    granica: 0;
+    dopełnienie: 0;
+}
+
+/**
+ * 1. Usuń domyślny pionowy pasek przewijania w IE 6/7/8/9.
+ * 2. Popraw czytelność i wyrównanie we wszystkich przeglądarkach.
+ */
+
+obszar tekstowy {
+    przepełnienie: automatyczne; /* 1 */
+    wyrównanie w pionie: góra; /* 2 */
+}
+
+/**
+ * Usuń większość odstępów między komórkami tabeli.
+ */
+
+tabela {
+    border-collapse: załamanie;
+    odstępy graniczne: 0;
+}
+
+HTML,
+przycisk,
+wejście,
+wybierać,
+obszar tekstowy {
+    kolor: #222;
+}
+
+
+::-moz-wybór {
+    tło: #b3d4fc;
+    cień tekstu: brak;
+}
+
+::wybór {
+    tło: #b3d4fc;
+    cień tekstu: brak;
+}
+
+obraz {
+    wyrównanie w pionie: środek;
+}
+
+zestaw pól {
+    granica: 0;
+    margines: 0;
+    dopełnienie: 0;
+}
+
+obszar tekstowy {
+    zmiana rozmiaru: pionowa;
+}
+
+.chromframe {
+    marża: 0,2em 0;
+    tło: #ccc;
+    kolor: #000;
+    dopełnienie: 0,2em 0;
+}
