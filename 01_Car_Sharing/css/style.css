@@ -150,8 +150,265 @@ header {
     padding-top: 95px;
     color: black;
 
+
 }
 .center {
     display: flex;
     justify-content: center;
 }
+.blog-title {
+    font-size: 35px;
+    font-weight: bold;
+}
+.lines::before, .lines::after {
+    content: "";
+    display: inline-block;
+    height: 2px;
+    width:50px;
+    background-color: #FF0000;
+    position: relative;
+    top: 20px;
+}
+.lines::before {
+    margin-right: 10px;
+}
+
+.lines::after {
+    margin-left: 10px;
+}
+
+
+.posts-photo {
+    width: 352px;
+    height: 234px;
+}
+.post-title {
+    font-size: 19px;
+    color: #6A6A6A;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    
+}
+.post-text {
+    font-size: 14px;
+    color: #6A6A6A;
+    width:260px;
+}
+.post-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 142px;
+    height: 40px;
+    background: #FF0000 0% 0% no-repeat padding-box;
+    border-radius: 40px;
+    color: white;
+    text-decoration: none;
+    box-shadow: 0px 3px 6px #FF00004D;
+    font-size: 14px;
+
+}
+.posts-container {
+    width: 1088px;
+    height: 516px;
+    display:flex;
+    justify-content: space-between;
+    margin-left: 220px;
+
+}
+.article-service {
+    width: 231px;
+    height: 361px;
+    margin-bottom: 100px;
+   
+
+    
+}
+
+.container-service {
+   width: 100%;
+   border: 0;
+   padding: 0;
+  
+  
+
+}
+
+.service-container {
+    background: #28272C;
+    padding-top: 95px;
+    display:flex;
+    justify-content: space-between;
+    padding-left: 154px;
+    padding-right: 154px;
+    
+}
+
+.service-title {
+    font-size: 35px;
+    background: #28272C;
+    padding-top: 60px;
+    margin: 0;
+}  
+.service-photo {
+    height: 170px;
+    width: 170px;
+    display: flex;
+    margin-left: 30px;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.service-title-small {
+    font-size: 19px;
+    text-align: center;
+    font: normal normal normal 19px/26px "Nunito Sans";
+    font-weight: 300;
+}
+
+.service-text {
+    font-size: 14px;
+    text-align: center;
+    color: #B2B2B2;
+}
+
+.service-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 142px;
+    height: 40px;
+    background: #FF0000 0% 0% no-repeat padding-box;
+    border-radius: 40px;
+    color: white;
+    text-decoration: none;
+    box-shadow: 0px 3px 6px #FF00004D;
+    font-size: 14px;
+    margin-left: 55px;
+}
+
+.contact {
+    background-color: white;
+    padding-top: 95px;
+    color: black;
+
+}
+.center {
+    display: flex;
+    justify-content: center;
+}
+.contact-title {
+    font-size: 35px;
+    font-weight: bold;
+    background-color: white;
+}
+.lines::before, .lines::after {
+    content: "";
+    display: inline-block;
+    height: 2px;
+    width:50px;
+    background-color: #FF0000;
+    position: relative;
+    top: 20px;
+}
+.lines::before {
+    margin-right: 10px;
+}
+
+.lines::after {
+    margin-left: 10px;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 904px;
+    height: 489px;
+    margin-left: 231px;
+}
+
+.left-column {
+    background-color: #fff;
+}
+
+.left-column img {
+    width: 444px;
+    height: 317px;
+}
+
+.right-column {
+    width: 444px;
+    height: 347px;
+    margin-left: 10px;;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    
+}
+
+
+.right-column .name {
+    width: 444px;
+    height: 38px;
+    box-shadow: 0px 1px 6px #FF00004D;
+    border: 1px solid #FF0000;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #B2B2B2;
+    padding-left:12px;
+}
+
+.right-column .e-mail {
+    width: 444px;
+    height: 38px;
+    border: 1px solid #D1D1D1;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #B2B2B2;
+    padding-left:12px;
+    margin-top: 20px;
+}
+
+.right-column .textarea {
+    width: 444px;
+    height: 140px;
+    border: 1px solid #D1D1D1;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #B2B2B2;
+    padding-left:12px;
+    padding-top: 5px;
+    margin-top: 20px;
+    font-family: "Nunito Sans" ;
+}
+
+.right-column label {
+    display: flex;
+    align-items: center;
+    color: #B2B2B2;
+    font-size: 10px;
+    font-weight: lighter;
+}
+
+
+
+.right-column button {
+    width: 142px;
+    height: 40px;
+    background-color: white;
+    box-shadow: 0px 3px 6px #FF00004D;
+    border: 1px solid #FF0000;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    padding: 11px 52px 11px 52px;
+    color: #FF0000;
+    cursor: pointer;
+    font-size: 14px; 
+    font-weight: bold;
+    margin-left: 300px;
+}
+
