@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: black;
+
     color: white;
     font-family: "Nunito Sans" , sans-serif;
 
@@ -105,6 +105,7 @@ header {
 .info {
     font-size: 16px;
     margin-bottom: 64px;
+    text-align: center;
 }
 .buttons {
     font-size: 16px;
@@ -139,6 +140,18 @@ header {
     justify-content: center;
     align-items: center;
     position: absolute;
-    left: 48%;
-    bottom:2px;
+    left: 50%; /* przesunięcie o szerokość tej strzałki o 50%*/
+    transform: translate(-50%, 0);
+    bottom:2px; /* pozycjonowanie absolutne - możemy się odwoływać do lewej, prawej dołu i góry - krawędzi*/
+}
+
+.blog {
+    background-color: white;
+    padding-top: 95px;
+    color: black;
+
+}
+.center {
+    display: flex;
+    justify-content: center;
 }
